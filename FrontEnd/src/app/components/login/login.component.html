@@ -1,28 +1,57 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
 <div class="simple-login-container">
-    <h2>Inicio de Sesión</h2>
+  <h2>Inicio de Sesión</h2>
+  <p>Por favor, ingrese Usuario y Contraseña.</p>
+
+  <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
     <div class="row">
-        <div class="col-md-12 form-group">
-            <input type="text" class="form-control" placeholder="Usuario">
-        </div>
+      <div class="col-md-12 form-group">
+        <input
+          type="email"
+          id="nombreUsuario"
+          name="nombreUsuario"
+          class="form-control form-control-lg"
+          [(ngModel)]="nombreUsuario"
+          required
+          placeholder="Ingrese su Usuario"
+        />
+      </div>
     </div>
     <div class="row">
-        <div class="col-md-12 form-group">
-            <input type="password" placeholder="Ingrese su contraseña" class="form-control">
+      <div class="col-md-12 form-group">
+        <input
+          type="password"
+          id="password"
+          class="form-control form-control-lg"
+          [(ngModel)]="password"
+          name="password"
+          required
+          placeholder="Ingrese su contraseña"
+        />
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button
+              type="submit"
+              class="btn btn-block btn-login"
+            >Ingresar</button>
+          </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 form-group">
-            <input type="submit" class="btn btn-block btn-login" placeholder="Enter your Password">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              ¿No tienes cuenta? <a href="#!" class="fw-bold">Crear cuenta</a>
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <a href="https://1.envato.market/ydVvD">Download Best Theme</a>
-        </div>
-    </div>
+  </form>
 </div>
