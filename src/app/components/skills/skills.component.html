@@ -1,152 +1,20 @@
-<h1>Hard Skills</h1>
-<div class="row">
-    <div class="col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-  [percent]="70"
-  [radius]="100"
-  title="HTML"
-  [imageSrc]="'./assets/html.png'"
-  [showImage]="true"
-  [imageHeight]="90"
-  [imageWidth]="90"
-  [showUnits]="false"
-  [outerStrokeWidth]="25"
-  [innerStrokeWidth]="5"
-  [outerStrokeColor]="'#0000ff'"
-  [innerStrokeColor]="'#000000'"
-  [animation]="true"
-  [animationDuration]="1000">
-    </circle-progress>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-      [percent]="80"
-      [radius]="100"
-      title="Java"
-      [imageSrc]="'./assets/Java.png'"
-        [showImage]="true"
-        [imageHeight]="90"
-        [imageWidth]="90"
-      subtitle=""
-      [showUnits]="false"
-      [outerStrokeWidth]="25"
-      [innerStrokeWidth]="5"
-      [outerStrokeColor]="'#0000ff'"
-      [innerStrokeColor]="'#000000'"
-      [animation]="true"
-      [animationDuration]="1000">
-        </circle-progress>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <circle-progress
-          [percent]="85"
-          [radius]="100"
-          title="Database Management"
-          subtitle=""
-          [showUnits]="false"
-          [outerStrokeWidth]="25"
-          [innerStrokeWidth]="5"
-          [outerStrokeColor]="'#0000ff'"
-          [innerStrokeColor]="'#000000'"
-          [animation]="true"
-          [animationDuration]="1000">
-            </circle-progress>
-            </div>
+<h1>Hard & Soft Skills</h1>
+<div class="col-lg-2">
+  <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
 </div>
-
-<h1>Soft Skills</h1>
 <div class="row">
-    <div class="col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-  [percent]="85"
-  [radius]="100"
-  title="Adaptability"
-  subtitle=""
-  [showUnits]="false"
-  [outerStrokeWidth]="25"
-  [innerStrokeWidth]="5"
-  [outerStrokeColor]="'#0000ff'"
-  [innerStrokeColor]="'#000000'"
-  [animation]="true"
-  [animationDuration]="1000">
+  <div class="col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+    <circle-progress [percent]="(skill.porcentaje)" [radius]="100" title="HTML" [imageSrc]="''" [title]="(skill.nombre)"
+      [titleColor]="'#00000'" [showImage]="false" [showTitle]="true" [imageHeight]="90" [imageWidth]="90" [showUnits]="false"
+      [outerStrokeWidth]="25" [innerStrokeWidth]="5" [outerStrokeColor]="'#0000ff'" [innerStrokeColor]="'#000000'"
+      [animation]="true" [animationDuration]="1000">
     </circle-progress>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-      [percent]="85"
-      [radius]="100"
-      title="Problem Solving"
-      subtitle=""
-      [showUnits]="false"
-      [outerStrokeWidth]="25"
-      [innerStrokeWidth]="5"
-      [outerStrokeColor]="'#0000ff'"
-      [innerStrokeColor]="'#000000'"
-      [animation]="true"
-      [animationDuration]="1000">
-        </circle-progress>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <circle-progress
-          [percent]="85"
-          [radius]="100"
-          title="Teamwork"
-          subtitle=""
-          [showUnits]="false"
-          [outerStrokeWidth]="25"
-          [innerStrokeWidth]="5"
-          [outerStrokeColor]="'#0000ff'"
-          [innerStrokeColor]="'#000000'"
-          [animation]="true"
-          [animationDuration]="1000">
-            </circle-progress>
-            </div>
-</div>
-
-<h1>Idiomas</h1>
-<div class="row">
-    <div class="col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-  [percent]="80"
-  [radius]="100"
-  title="Inglés"
-  [showSubtitle]="true"
-  [imageHeight]="100"
-  [imageWidth]="100"
-  [outerStrokeWidth]="25"
-  [innerStrokeWidth]="5"
-  [outerStrokeColor]="'#0000ff'"
-  [innerStrokeColor]="'#000000'"
-  [animation]="true"
-  [animationDuration]="1000">
-    </circle-progress>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-      [percent]="100"
-      [radius]="100"
-      title="Español"
-      [showUnits]="true"
-      [outerStrokeWidth]="25"
-      [innerStrokeWidth]="5"
-      [outerStrokeColor]="'#0000ff'"
-      [innerStrokeColor]="'#000000'"
-      [animation]="true"
-      [animationDuration]="1000">
-        </circle-progress>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <circle-progress
-          [percent]="40"
-          [radius]="100"
-          title="Portugues"
-          [showUnits]="true"
-          [outerStrokeWidth]="25"
-          [innerStrokeWidth]="5"
-          [outerStrokeColor]="'#0000ff'"
-          [innerStrokeColor]="'#000000'"
-          [animation]="true"
-          [animationDuration]="1000">
-            </circle-progress>
-            </div>
-</div>
+    <td *ngIf="isLogged">
+      <button class="btn btn-success" routerLink="/editskill/{{skill.id}}">
+        <i class="bi bi-pencil-square"></i></button>
+    </td>
+    <td *ngIf="isLogged">
+      <button class="btn btn-danger" (click)="delete(skill.id)">
+        <i class="bi bi-trash-fill"></i></button>
+    </td>
+  </div>

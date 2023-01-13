@@ -8,6 +8,6 @@ export const environment = {
     authDomain: 'portfolio-balmaceda.firebaseapp.com',
     messagingSenderId: '34799229655',
   },
-production: true,
+production: false,
 URL: 'http://localhost:8080/'
 };
