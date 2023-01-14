@@ -9,6 +9,6 @@ export const environment = {
     messagingSenderId: '34799229655',
   },
   
-production: false,
-URL: 'https://porfolio-lfb.onrender.com'
+production: true,
+URL: 'localhost:8080'
 };
