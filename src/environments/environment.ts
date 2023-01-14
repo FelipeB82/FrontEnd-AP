@@ -1,14 +1,14 @@
 export const environment = {
   firebase: {
-    projectId: 'portfolio-balmaceda',
-    appId: '1:34799229655:web:c2391c9c8ba92aecb26e92',
-    storageBucket: 'portfolio-balmaceda.appspot.com',
-    locationId: 'us-central',
-    apiKey: 'AIzaSyBI2D6KagJ1s7ebWwuV8xiuwNjlatuGKOo',
-    authDomain: 'portfolio-balmaceda.firebaseapp.com',
-    messagingSenderId: '34799229655',
+    apiKey: "AIzaSyBI2D6KagJ1s7ebWwuV8xiuwNjlatuGKOo",
+    authDomain: "portfolio-balmaceda.firebaseapp.com",
+    projectId: "portfolio-balmaceda",
+    storageBucket: "portfolio-balmaceda.appspot.com",
+    messagingSenderId: "34799229655",
+    appId: "1:34799229655:web:cd9aebfc30665494b26e92"
   },
   
+  
 production: true,
-URL: 'https://porfolio-lfb.onrender.com'
+URL: 'http://localhost:8080'
 };
