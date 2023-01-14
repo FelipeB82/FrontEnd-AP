@@ -8,6 +8,7 @@ export const environment = {
     authDomain: 'portfolio-balmaceda.firebaseapp.com',
     messagingSenderId: '34799229655',
   },
+  
 production: false,
-URL: 'http://localhost:8080/'
+URL: 'https://porfolio-lfb.onrender.com'
 };

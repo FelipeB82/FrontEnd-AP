@@ -26,6 +26,8 @@ import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { EditSkillComponent } from './components/skills/edit-skill.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
+import { EditacercadeComponent } from './components/acerca-de/editacercade.component';
+
 
 @NgModule({
   declarations: [
@@ -46,8 +48,10 @@ import { NewSkillComponent } from './components/skills/new-skill.component';
     NeweducacionComponent,
     EditeducacionComponent,
     EditSkillComponent,
-    NewSkillComponent
+    NewSkillComponent,
+    EditacercadeComponent,
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
