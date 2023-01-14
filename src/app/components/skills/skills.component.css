@@ -1,8 +1,9 @@
 .row{
     text-align: center;
+    padding: 20px;
 }
 h1 {
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .circulo{
     display: flex;
