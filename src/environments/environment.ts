@@ -1,11 +1,12 @@
 export const environment = {
   firebase: {
-    apiKey: "AIzaSyBI2D6KagJ1s7ebWwuV8xiuwNjlatuGKOo",
-    authDomain: "portfolio-balmaceda.firebaseapp.com",
-    projectId: "portfolio-balmaceda",
-    storageBucket: "portfolio-balmaceda.appspot.com",
-    messagingSenderId: "34799229655",
-    appId: "1:34799229655:web:cd9aebfc30665494b26e92"
+    projectId: 'storage-ap-lfb',
+    appId: '1:42330578377:web:913568db7dbf7ee5ba5c18',
+    storageBucket: 'storage-ap-lfb.appspot.com',
+    locationId: 'us-central',
+    apiKey: 'AIzaSyAQYcnThwal5k2wFk7p9maMIGkNIl6sSrI',
+    authDomain: 'storage-ap-lfb.firebaseapp.com',
+    messagingSenderId: '42330578377',
   },
   
   

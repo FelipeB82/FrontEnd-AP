@@ -48,4 +48,4 @@ export class EditacercadeComponent implements OnInit {
      const name = "perfil_" + id;
      this.imageService.uploadImage($event, name)
    }
-}
+} 

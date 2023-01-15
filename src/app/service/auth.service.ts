@@ -10,7 +10,9 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://frontend-ap-24d65.web.app//auth/';
+  //authURL = '/auth/';
+  authURL = 'http://localhost:8080/auth/'
+
 
   constructor(private httpClient: HttpClient) { }
 

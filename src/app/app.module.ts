@@ -58,7 +58,9 @@ import { EditacercadeComponent } from './components/acerca-de/editacercade.compo
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     FormsModule, 
-    ReactiveFormsModule, provideFirebaseApp(() => initializeApp(environment.firebase)), provideStorage(() => getStorage())
+    ReactiveFormsModule, 
+    provideFirebaseApp(() => initializeApp(environment.firebase)), 
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorProvider,
