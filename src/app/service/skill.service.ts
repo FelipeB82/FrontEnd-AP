@@ -8,8 +8,8 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
- //URL = 'https://frontend-ap-24d65.web.app/skill/';
- URL = 'http://localhost:8080/skill/';
+ URL = 'https://porfolio-lfb.onrender.com/skill/';
+ //URL = 'http://localhost:8080/skill/';
  
   constructor(private httpClient: HttpClient) { }
 

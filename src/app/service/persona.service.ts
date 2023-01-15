@@ -8,8 +8,8 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  //URL = 'https://frontend-ap-24d65.web.app/personas/';
-  URL = 'http://localhost:8080/personas/';
+  URL = 'https://porfolio-lfb.onrender.com/personas/';
+  //URL = 'http://localhost:8080/personas/';
 
   constructor(private httpClient: HttpClient) { }
 

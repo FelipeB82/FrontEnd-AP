@@ -27,6 +27,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { EditSkillComponent } from './components/skills/edit-skill.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
 import { EditacercadeComponent } from './components/acerca-de/editacercade.component';
+import { NewproyectoComponent } from './components/proyectos/newproyecto.component';
+import { EditproyectoComponent } from './components/proyectos/editproyecto.component';
 
 
 @NgModule({
@@ -50,6 +52,8 @@ import { EditacercadeComponent } from './components/acerca-de/editacercade.compo
     EditSkillComponent,
     NewSkillComponent,
     EditacercadeComponent,
+    NewproyectoComponent,
+    EditproyectoComponent,
   ],
   
   imports: [

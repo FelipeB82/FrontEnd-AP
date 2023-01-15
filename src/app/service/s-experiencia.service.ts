@@ -8,8 +8,8 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  URL = 'http://localhost:8080/explab/';
-  //URL = 'https://frontend-ap-24d65.web.app/explab/';
+  //URL = 'http://localhost:8080/explab/';
+  URL = 'https://porfolio-lfb.onrender.com/explab/';
 
 
   constructor(private httpClient: HttpClient) {}

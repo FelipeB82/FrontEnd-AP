@@ -8,8 +8,8 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-//URL = 'https://frontend-ap-24d65.web.app/educacion/';
-URL = 'http://localhost:8080/educacion/';
+URL = 'https://porfolio-lfb.onrender.com/educacion/';
+//URL = 'http://localhost:8080/educacion/';
 
   constructor(private httpClient : HttpClient) { }
 
